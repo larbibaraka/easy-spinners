@@ -1,0 +1,20 @@
+{
+  "name": "easy-spinners",
+  "version": "1.0.0",
+  "description": "spinners for React that are Css-only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larbibaraka/easy-spinners.git"
+  },
+  "keywords": ["react", "css", "spinners"],
+  "author": "Baraka Larbi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larbibaraka/easy-spinners/issues"
+  },
+  "homepage": "https://github.com/larbibaraka/easy-spinners#readme"
+}
