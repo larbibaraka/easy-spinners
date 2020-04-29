@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint '**/*.js'",
-    "format": "prettier-eslint $PWD/'**/*.js' --write"
+    "format": "prettier-eslint $PWD/'**/*.js' --write",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c"
   },
   "husky": {
     "hooks": {
@@ -43,7 +45,10 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.0",
     "prettier-eslint": "^9.0.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.7.5",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {}
 }
