@@ -4,8 +4,19 @@
   "description": "spinners for React that are Css-only",
   "main": "index.js",
   "scripts": {
-    "lint" : "eslint '**/*.js'",
-    "format" : "prettier-eslint $PWD/'**/*.js' --write"
+    "lint": "eslint '**/*.js'",
+    "format": "prettier-eslint $PWD/'**/*.js' --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -29,6 +40,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.0",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0"
   },
