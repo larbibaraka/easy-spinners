@@ -2,7 +2,9 @@
   "name": "easy-spinners",
   "version": "1.0.0",
   "description": "spinners for React that are Css-only",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects" : false,
   "scripts": {
     "lint": "eslint '**/*.js'",
     "format": "prettier-eslint $PWD/'**/*.js' --write",
